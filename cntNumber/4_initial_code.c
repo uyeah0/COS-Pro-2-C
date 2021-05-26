@@ -11,7 +11,7 @@ int* func_a(int arr[], int arr_len) {
     return counter;
 }
 
-int func_b(int arr[], int arr_len) { // max±¸ÇÏ±â
+int func_b(int arr[], int arr_len) { // max
     int ret = 0;
     for (int i = 0; i < arr_len; i++) {
         if (ret < arr[i])
@@ -20,7 +20,7 @@ int func_b(int arr[], int arr_len) { // max±¸ÇÏ±â
     return ret;
 }
 
-int func_c(int arr[], int arr_len) { // min±¸ÇÏ±â
+int func_c(int arr[], int arr_len) { // min
     const int INF = 1001;
     int ret = INF;
     for (int i = 0; i < arr_len; i++) {
