@@ -2,16 +2,16 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-// arr_row_lenÀº 2Â÷¿ø ¹è¿­ arrÀÇ Çà(¼¼·Î) ±æÀÌÀÔ´Ï´Ù.
-// arr_col_lenÀº 2Â÷¿ø ¹è¿­ arrÀÇ ¿­(°¡·Î) ±æÀÌÀÔ´Ï´Ù.
-// arr[i][j]´Â arrÀÇ i¹øÂ° ÇàÀÇ j¹øÂ° ¿­¿¡ ÀúÀåµÈ °ªÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
+// arr_row_lenì€ 2ì°¨ì› ë°°ì—´ arrì˜ í–‰(ì„¸ë¡œ) ê¸¸ì´ì…ë‹ˆë‹¤.
+// arr_col_lenì€ 2ì°¨ì› ë°°ì—´ arrì˜ ì—´(ê°€ë¡œ) ê¸¸ì´ì…ë‹ˆë‹¤.
+// arr[i][j]ëŠ” arrì˜ ië²ˆì§¸ í–‰ì˜ jë²ˆì§¸ ì—´ì— ì €ì¥ëœ ê°’ì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
 int solution(int** arr, int arr_row_len, int arr_col_len, int k) {
     int answer = 0;
     int min = arr[0][0];
     int cnt=0;
     
     while(cnt < k){
-        for(int i =0; i < arr_row_len; i++){ // min±¸ÇÏ±â
+        for(int i =0; i < arr_row_len; i++){ // minêµ¬í•˜ê¸°
             for(int j =0; j < arr_col_len; j++){
                 if(min > arr[i][j] && arr[i][j] !=0) {
                     min = arr[i][j];
