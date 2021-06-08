@@ -8,7 +8,7 @@ int solution(int number) {
         int current = i;
         int temp = count;
         while (current != 0) {
-            if () {
+            if ( current % 10 ==3|| current%10==6 || current %10== 9) {
                 count++;
                 printf("pair");
             }
