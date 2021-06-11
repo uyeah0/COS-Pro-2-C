@@ -9,7 +9,7 @@ int solution(int data[], int len) {
     }
     avg = sum / dlen;
     for (int i = 0; i < len; i++) {
-        if (data[i] < avg) cnt++;
+        if (data[i] <= avg) cnt++;
     }
 
     return cnt;
