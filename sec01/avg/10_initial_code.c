@@ -19,7 +19,6 @@ int main() {
     int data_len1 = 10;
     int ret1 = solution(data1, data_len1);
 
-    // Press Run button to receive output.
     printf("Solution: return value of the function is %d .\n", ret1);
 
     int data2[10] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 10 };
