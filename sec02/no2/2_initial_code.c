@@ -28,18 +28,17 @@ int func_c(int arr[], arr_len){
 }
 
 char* solution(int arr[], int arr_len) {
-    int count_three = func_@@@(@@@);
-    int count_five = func_@@@(@@@);
-    char* answer = func_@@@(@@@);
+    int count_three = func_c(arr,arr_len);
+    int count_five = func_a(arr, arr_len);
+    char* answer = func_b(count_three, count_five);
     return answer;
 }
 
-// 아래는 테스트케이스 출력을 해보기 위한 main 함수입니다.
+
 int main() {
     int arr[10] = {2, 3, 6, 9, 12, 15, 10, 20, 22, 25};
     int arr_len = 10;
     char* ret = solution(arr, arr_len);
-
-    // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+    
     printf("solution 함수의 반환 값은 %s 입니다.\n", ret);
 }
