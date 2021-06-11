@@ -26,6 +26,5 @@ int main() {
     int data_len2 = 10;
     int ret2 = solution(data2, data_len2);
 
-    // Press Run button to receive output.
     printf("Solution: return value of the function is %d .\n", ret2);
 };
