@@ -21,19 +21,19 @@ char* solution(char* arr[], int arr_len) {
     return answer;
 }
 
-// ¾Æ·¡´Â Å×½ºÆ®ÄÉÀÌ½º Ãâ·ÂÀ» ÇØº¸±â À§ÇÑ main ÇÔ¼öÀÔ´Ï´Ù.
+// ì•„ë˜ëŠ” í…ŒìŠ¤íŠ¸ì¼€ì´ìŠ¤ ì¶œë ¥ì„ í•´ë³´ê¸° ìœ„í•œ main í•¨ìˆ˜ì…ë‹ˆë‹¤.
 int main() {
     char* words1[5] = { "my", "favorite", "color", "is", "violet" };
     int words_len1 = 5;
     char* ret1 = solution(words1, words_len1);
 
-    // [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %s ÀÔ´Ï´Ù.\n", ret1);
+    // [ì‹¤í–‰] ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¶œë ¥ ê°’ì„ ë³¼ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %s ì…ë‹ˆë‹¤.\n", ret1);
 
     char* words2[3] = { "yes", "i", "am" };
     int words_len2 = 3;
     char* ret2 = solution(words2, words_len2);
 
-    // [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %s ÀÔ´Ï´Ù.\n", ret2);
+    // [ì‹¤í–‰] ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¶œë ¥ ê°’ì„ ë³¼ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %s ì…ë‹ˆë‹¤.\n", ret2);
 }
