@@ -17,5 +17,5 @@ int main() {
     int M = 7;
     int ret = solution(N, M);
 
-    printf("solution �Լ��� ��ȯ ���� %d �Դϴ�.\n", ret);
+    printf("solution ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀº %d ÀÔ´Ï´Ù.\n", ret);
 }
