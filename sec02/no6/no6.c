@@ -21,6 +21,6 @@ int main() {
 	int floors_len = 5;
 	int ret = solution(floors, floors_len);
 
-	// [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
-	printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %d ÀÔ´Ï´Ù.\n", ret);
+	// [ì‹¤í–‰] ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¶œë ¥ ê°’ì„ ë³¼ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
+	printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %d ì…ë‹ˆë‹¤.\n", ret);
 }
