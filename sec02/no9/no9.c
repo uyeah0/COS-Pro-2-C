@@ -21,6 +21,5 @@ int main() {
 	int K = 2;
 	int ret = solution(votes, votes_len, N, K);
 
-	// [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
-	printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %d ÀÔ´Ï´Ù.\n", ret);
+	printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %d ì…ë‹ˆë‹¤.\n", ret);
 }
