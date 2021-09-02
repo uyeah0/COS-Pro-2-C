@@ -36,13 +36,11 @@ int solution(int scores[], int scores_len, int n) {
 	return answer;
 }
 
-// ¾Æ·¡´Â Å×½ºÆ®ÄÉÀÌ½º Ãâ·ÂÀ» ÇØº¸±â À§ÇÑ main ÇÔ¼öÀÔ´Ï´Ù.
 int main() {
 	int scores[4] = { 20, 60, 98, 59 };
 	int scores_len = 4;
 	int n = 3;
 	int ret = solution(scores, scores_len, n);
 
-	// [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
-	printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %d ÀÔ´Ï´Ù.\n", ret);
+	printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %d ì…ë‹ˆë‹¤.\n", ret);
 }
