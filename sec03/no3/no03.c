@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 int solution(int scores[], int scores_len) {
-    int answer = 0;
+    int answer = 0, sum = 0;
     int max = scores[0], min = scores[0];
-    int sum = 0;
+    
     for (int i = 0; i < scores_len; i++) {
         if (scores[i] > max) max = scores[i];
         else if (scores[i] < min) min = scores[i];
