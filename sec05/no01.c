@@ -24,5 +24,5 @@ int main() {
     int win = 3;
     int ret = solution(ladders, ladders_len, win);
 
-    printf("solution �Լ��� ��ȯ ���� %d �Դϴ�.\n", ret);
+    printf("solution ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀº %d ÀÔ´Ï´Ù.\n", ret);
 }
