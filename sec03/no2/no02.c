@@ -5,7 +5,7 @@
 int func_a(int current_grade[], int last_grade[], int rank[], int arr_length, int max_diff_grade) { // 
     int count = 0;
     for (int i = 0; i < arr_length; i++) {
-        if (current_grade[i] >= 80 && rank[i] <= arr_length / 10) // 10ÇÁ·Î ÀÌÇÏ
+        if (current_grade[i] >= 80 && rank[i] <= arr_length / 10) // 10í”„ë¡œ ì´í•˜
             count++;
         else if (current_grade[i] >= 80 && rank[i] == 1)
             count++;
@@ -15,17 +15,17 @@ int func_a(int current_grade[], int last_grade[], int rank[], int arr_length, in
     return count;
 }
 
-int* func_b(int current_grade[], int arr_length) { // rank ±¸ÇÏ±â
-    int* rank = (int*)malloc(sizeof(int) * arr_length); // ÀÎ¿ø ¼ö¿Í °°Àº ¹è¿­ »ı¼º
-    for (int i = 0; i < arr_length; i++) // ¹è¿­ ÃÊ±âÈ­
+int* func_b(int current_grade[], int arr_length) { // rank êµ¬í•˜ê¸°
+    int* rank = (int*)malloc(sizeof(int) * arr_length); // ì¸ì› ìˆ˜ì™€ ê°™ì€ ë°°ì—´ ìƒì„±
+    for (int i = 0; i < arr_length; i++) // ë°°ì—´ ì´ˆê¸°í™”
         rank[i] = 1;
     for (int i = 0; i < arr_length; i++) 
         for (int j = 0; j < arr_length; j++)
             if (current_grade[i] < current_grade[j])
-                rank[i]++; // ÀÛÀ¸¸é rank Áõ°¡
-    return rank; // rank¹è¿­ ¹İÈ¯
+                rank[i]++; // ì‘ìœ¼ë©´ rank ì¦ê°€
+    return rank; // rankë°°ì—´ ë°˜í™˜
 }
-int func_c(int current_grade[], int last_grade[], int arr_length) { // ÃÖ´ñ°ª ±¸ÇÏ±â
+int func_c(int current_grade[], int last_grade[], int arr_length) { // ìµœëŒ“ê°’ êµ¬í•˜ê¸°
     int max_diff_grade = 1; 
     for (int i = 0; i < arr_length; i++) {
         if (max_diff_grade < current_grade[i] - last_grade[i]) 
@@ -49,6 +49,6 @@ int main() {
     int last_grade_len = 6;
     int ret = solution(current_grade, current_grade_len, last_grade, last_grade_len);
 
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %d ÀÔ´Ï´Ù.\n", ret);
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %d ì…ë‹ˆë‹¤.\n", ret);
 }
 
