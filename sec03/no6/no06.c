@@ -21,11 +21,11 @@ int main() {
     int tile_length1 = 11;
     char* ret1 = solution(tile_length1);
 
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %s ÀÔ´Ï´Ù.\n", ret1);
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %s ì…ë‹ˆë‹¤.\n", ret1);
 
     int tile_length2 = 16;
     char* ret2 = solution(tile_length2);
 
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº %s ÀÔ´Ï´Ù.\n", ret2);
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ %s ì…ë‹ˆë‹¤.\n", ret2);
 }
     
