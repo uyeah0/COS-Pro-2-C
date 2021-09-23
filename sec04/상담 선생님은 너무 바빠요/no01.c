@@ -24,10 +24,10 @@ int main() {
 	char* schedule[] = { "O", "X", "X", "O", "O", "O", "X", "O", "X", "X" };
 	int* ret = solution(schedule, 10);
 
-	printf("solution �Լ��� ��ȯ ���� ");
+	printf("solution ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀº ");
 	for (int i = 0; i < 5; i++) {
 		printf("%d ", ret[i]);
 	}
-	printf("�Դϴ�\n");
+	printf("ÀÔ´Ï´Ù\n");
 	return 0;
 }
