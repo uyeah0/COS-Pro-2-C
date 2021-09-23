@@ -15,5 +15,5 @@ void main() {
 	int calorie[] = { 713, 665, 873, 500, 751 };
 	int ret = solution(calorie, 5);
 
-	printf("solution ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀº %d ÀÔ´Ï´Ù", ret);
+	printf("solution 함수의 반환 값은 %d 입니다.", ret);
 }
