@@ -21,10 +21,10 @@ int main() {
     char* schedule[] = { "O", "X", "X", "O", "O", "O", "X", "O", "X", "X" };
     int* ret = solution(schedule, 10);
 
-    // [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº ");
+    // [ì‹¤í–‰] ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¶œë ¥ ê°’ì„ ë³¼ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ ");
     for (int i = 0; i < 5; i++)
         printf("%d, ", ret[i]);
-    printf(" ÀÔ´Ï´Ù.");
+    printf(" ì…ë‹ˆë‹¤.");
 
 }
