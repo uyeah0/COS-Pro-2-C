@@ -1,24 +1,24 @@
-// nÀå¾¿ ¹ø°¥¾Æ°¡¸ç »Ì´Â´Ù
-// Á¡¼ö ÇÕ»ê
-// 1. ¹ø°¥¾Æ°¡¸ç °¡Á®°£ Ä«µå ¹è¿­¿¡ ³Ö±â
-// 2. È¹µæÇÑ Á¡¼ö ±¸ÇÏ±â
-// 3. Á¡¼ö Å« »ç¶÷°ú Á¡¼ö ¸®ÅÏ
-// a - 1, b - 2 , ¹«½ÂºÎ - 0
+// nì¥ì”© ë²ˆê°ˆì•„ê°€ë©° ë½‘ëŠ”ë‹¤
+// ì ìˆ˜ í•©ì‚°
+// 1. ë²ˆê°ˆì•„ê°€ë©° ê°€ì ¸ê°„ ì¹´ë“œ ë°°ì—´ì— ë„£ê¸°
+// 2. íšë“í•œ ì ìˆ˜ êµ¬í•˜ê¸°
+// 3. ì ìˆ˜ í° ì‚¬ëŒê³¼ ì ìˆ˜ ë¦¬í„´
+// a - 1, b - 2 , ë¬´ìŠ¹ë¶€ - 0
 
-// ¿¹½Ã 0, 13 ¸®ÅÏ
+// ì˜ˆì‹œ 0, 13 ë¦¬í„´
 
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 
-char* func_a(char* bundle, int start, int n) { // Ä«µå ¹ø°¥¾Æ ÀúÀå
+char* func_a(char* bundle, int start, int n) { // ì¹´ë“œ ë²ˆê°ˆì•„ ì €ì¥
     char* answer = (char*)malloc(sizeof(char) * n);
     for (int i = 0; i < n; i++)
         answer[i] = bundle[start + i * 2];
     return answer;
 }
 
-int* func_b(int score1, int score2) { // Á¡¼ö ºñ±³
+int* func_b(int score1, int score2) { // ì ìˆ˜ ë¹„êµ
     int* answer = (int*)malloc(sizeof(int) * 2);
     if (score1 > score2) {
         answer[0] = 1;
@@ -36,7 +36,7 @@ int* func_b(int score1, int score2) { // Á¡¼ö ºñ±³
 }
 
 
-int func_c(char* card, int card_length) { // Ä«µå Á¡¼ö ÇÕ»ê
+int func_c(char* card, int card_length) { // ì¹´ë“œ ì ìˆ˜ í•©ì‚°
     int answer = 0;
     for (int i = 0; i < card_length; i++) {
         answer += card[i] - 'a' + 1;
@@ -60,10 +60,10 @@ int main() {
     char* bundle = "cacdbdedccbb";
     int* ret = solution(n, bundle);
 
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº [");
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ [");
     for (int i = 0; i < 2; i++) {
         if (i != 0) printf(", ");
         printf("%d", ret[i]);
     }
-    printf("] ÀÔ´Ï´Ù.\n");
+    printf("] ì…ë‹ˆë‹¤.\n");
 }
