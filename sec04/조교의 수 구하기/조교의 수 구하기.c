@@ -17,5 +17,5 @@ int main() {
 	int m = 30;
 	int ret = solution(classes, 4, m);
 
-	printf("solution �Լ��� ��ȯ ���� %d �Դϴ�.\n", ret);
+	printf("solution ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀº %d ÀÔ´Ï´Ù.\n", ret);
 }
