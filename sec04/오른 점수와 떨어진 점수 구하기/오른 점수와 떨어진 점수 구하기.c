@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-// ±â¸»°í»ç Á¡¼ö - Áß°£°í»ç ÃÖ´ñ°ª ±¸ÇÏ±â
-// ÃÖ¼Ú°ª ±¸ÇÏ±â
-// 1¹ø 2¹ø return 
-// ±â¸», Áß°£ È½¼ö ¶È°°À½
+// ê¸°ë§ê³ ì‚¬ ì ìˆ˜ - ì¤‘ê°„ê³ ì‚¬ ìµœëŒ“ê°’ êµ¬í•˜ê¸°
+// ìµœì†Ÿê°’ êµ¬í•˜ê¸°
+// 1ë²ˆ 2ë²ˆ return 
+// ê¸°ë§, ì¤‘ê°„ íšŸìˆ˜ ë˜‘ê°™ìŒ
 
-int func_a(int scores1[], int scores2[], int scores_len) { // ÃÖ´ë
+int func_a(int scores1[], int scores2[], int scores_len) { // ìµœëŒ€
     int answer = 0;
     for (int i = 0; i < scores_len; i++)
         if (answer < scores2[i] - scores1[i]) 
@@ -14,7 +14,7 @@ int func_a(int scores1[], int scores2[], int scores_len) { // ÃÖ´ë
     return answer;
 }
 
-int func_b(int scores1[], int scores2[], int scores_len) { // ÃÖ¼Ò
+int func_b(int scores1[], int scores2[], int scores_len) { // ìµœì†Œ
     int answer = 0;
     for (int i = 0; i < scores_len; i++)
         if (answer > scores1[i] - scores2[i])
@@ -36,10 +36,10 @@ int main() {
     int final_scores[] = { 10, 50, 70 };
     int* ret = solution(mid_scores, 3, final_scores, 3);
 
-    printf("solution ÇÔ¼öÀÇ ¹İÈ¯ °ªÀº [");
+    printf("solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ [");
     for (int i = 0; i < 2; i++) {
         if (i != 0) printf(", ");
         printf("%d", ret[i]);
     }
-    printf("] ÀÔ´Ï´Ù.\n");
+    printf("] ì…ë‹ˆë‹¤.\n");
 }
