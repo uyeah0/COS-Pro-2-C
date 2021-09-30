@@ -13,5 +13,5 @@ int main() {
 	int point = 2323;
 	int ret = solution(point);
 
-	printf("solution ÇÔ¼öÀÇ ¹İÇÑ °ªÀº %dÀÔ´Ï´Ù", ret);
+	printf("solution Ã‡Ã”Â¼Ã¶Ã€Ã‡ Â¹ÃÃ‡Ã‘ Â°ÂªÃ€Âº %dÃ€Ã”Â´ÃÂ´Ã™", ret);
 }
